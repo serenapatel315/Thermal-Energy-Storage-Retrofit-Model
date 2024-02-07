@@ -1,0 +1,53 @@
+My task ID:  0
+Number of Tasks:  10
+Loading Inputs
+1
+/home/gridsan/spatel/MITEI_TES/temp_eff/parameters/.ipynb_checkpoints
+Solving Model
+a/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:43 =# @pysym(:PyObject_Call), PyPtr, (PyPtr, PyPtr, PyPtr), o, pyargsptr, kw))))) <class 'IsADirectoryError'>
+LLSUB_RANK=0: IsADirectoryError(21, 'Is a directory')
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+LLSUB_RANK=0:     return func(*args, **kwargs)
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 680, in read_csv
+LLSUB_RANK=0:     return _read(filepath_or_buffer, kwds)
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+LLSUB_RANK=0:     parser = TextFileReader(filepath_or_buffer, **kwds)
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 933, in __init__
+LLSUB_RANK=0:     self._engine = self._make_engine(f, self.engine)
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1217, in _make_engine
+LLSUB_RANK=0:     self.handles = get_handle(  # type: ignore[call-overload]
+LLSUB_RANK=0:   File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2022a/lib/python3.8/site-packages/pandas/io/common.py", line 789, in get_handle
+LLSUB_RANK=0:     handle = open(
+LLSUB_RANK=0: 
+LLSUB_RANK=0: Stacktrace:
+LLSUB_RANK=0:   [1] pyerr_check
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/exception.jl:62 [inlined]
+LLSUB_RANK=0:   [2] pyerr_check
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/exception.jl:66 [inlined]
+LLSUB_RANK=0:   [3] _handle_error(msg::String)
+LLSUB_RANK=0:     @ PyCall /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/exception.jl:83
+LLSUB_RANK=0:   [4] macro expansion
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/exception.jl:97 [inlined]
+LLSUB_RANK=0:   [5] #107
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:43 [inlined]
+LLSUB_RANK=0:   [6] disable_sigint
+LLSUB_RANK=0:     @ ./c.jl:458 [inlined]
+LLSUB_RANK=0:   [7] __pycall!
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:42 [inlined]
+LLSUB_RANK=0:   [8] _pycall!(ret::PyCall.PyObject, o::PyCall.PyObject, args::Tuple{String}, nargs::Int64, kw::Ptr{Nothing})
+LLSUB_RANK=0:     @ PyCall /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:29
+LLSUB_RANK=0:   [9] _pycall!
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:11 [inlined]
+LLSUB_RANK=0:  [10] #pycall#112
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:80 [inlined]
+LLSUB_RANK=0:  [11] pycall
+LLSUB_RANK=0:     @ /state/partition1/llgrid/pkg/julia/julia-1.7.3/local/share/julia/packages/PyCall/ygXW2/src/pyfncall.jl:80 [inlined]
+LLSUB_RANK=0:  [12] read_csv(args::String; kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+LLSUB_RANK=0:     @ Pandas ~/.julia/packages/Pandas/R43yt/src/Pandas.jl:334
+LLSUB_RANK=0:  [13] read_csv
+LLSUB_RANK=0:     @ ~/.julia/packages/Pandas/R43yt/src/Pandas.jl:333 [inlined]
+LLSUB_RANK=0:  [14] TES_dispatch_rep(fname::String, threads::Int64, path::String)
+LLSUB_RANK=0:     @ Main ~/MITEI_TES/temp_eff/TES_model_repweek.jl:22
+LLSUB_RANK=0:  [15] top-level scope
+LLSUB_RANK=0:     @ ~/MITEI_TES/temp_eff/TES_script_repweeks.jl:29
+LLSUB_RANK=0: in expression starting at /home/gridsan/spatel/MITEI_TES/temp_eff/TES_script_repweeks.jl:24
