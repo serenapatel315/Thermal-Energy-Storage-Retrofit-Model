@@ -9,6 +9,10 @@ We formulate the Integrated Dispatch and Sizing (IDS) optimization model to eval
 The key techno-economic parameter inputs to the IDS model are summarized in the file "TES_assumptions.xlsx", with remaining parameter inputs summarized in Table S5 and S6 in S.I. In addition to these parameters, for each coal plant archetype, we use the following outputs of the process simulation as parameter inputs for the IDS model: a) log-mean temperature difference (LMTD) for hot and cold composite streams for each heat exchanger, b) steam-cycle heat to power efficiency, and c) maximum salt flow rate. 
 The heat exchanger network that are optimized following the design assumptions for a molten salt shell-and-tube heat exchanger network for steam-turbines that consists of a superheater, evaporator, and economizer. 
 
+### Data and Equations
+Detailed description of data and equations describing the optimization setup is in: 
+[Equations.pdf](https://github.com/serenapatel315/Thermal-Energy-Storage-Retrofit-Model/files/14212777/Equations.pdf)
+
 ## How to Use 
 
 ### Sample 
@@ -30,4 +34,6 @@ After setting up the sensitivity cases of interest, we ran the model on the MIT 
 
 ### Processing Results
 Results are processed in the file "processing_results.ipynb", which reads in the results from the folder titled "RESULTS". These generate figures stored in the folder labeled "figures". 
+
+
 
