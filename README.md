@@ -13,6 +13,16 @@ The heat exchanger network that are optimized following the design assumptions f
 Detailed description of data and equations describing the optimization setup is in: 
 [Equations.pdf](https://github.com/serenapatel315/Thermal-Energy-Storage-Retrofit-Model/files/14212777/Equations.pdf)
 
+The Indian Coal Plant Dataset and Simulation Results are found in the folder "aspen_data". The archetypical coal plants are summarized in:
+* "archetypes_input.csv": the inputs to the process simulation in aspen
+* "arechetypes_output.csv": the outputs to the aspen simulation that were used as a point of comparison between the TES simulation and coal plant simulation 
+* "simulation_input_dataset.csv" is the simulation inputs for 85 units as well as the archetype plants
+* "simulation_output_dataset.csv" is the simulation results from 85 units as well as the archetype plants
+* "output_df_maxtemps.csv" stores the simulation results from the base case (500 MW unit) TES under higher peak salt temperatures
+
+These process simulations and models are stored in the "simulation/Trombay_analysis/Unit 5" directory, which also contains a python notebook with more details on generating sensitivities. 
+
+
 ## How to Use 
 
 ### Sample 
